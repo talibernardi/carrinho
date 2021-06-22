@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+    <h5 class="text-center m-3"><strong>Meu Carrinho</strong></h5>
+    <hr>
+    <div class="container">
+        <div class="row" id="trufas">
+            
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row p-2">
+            <div class="col-12">
+                <h5><strong>Carrinho</strong></h5>
+                
+            </div>
+            <div class="col-6 text-start">
+                <h5><strong>Total</strong></h5>
+            </div>
+            <div class="col-6 text-end">
+                <h5><strong>R$</strong></h5>
+            </div>
+            <div class="col-12 d-none" id="frete">
+                <div class="text-center alert alert-success" role="alert">
+                    <strong>Parabéns, sua compra tem frete grátis !</strong>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <hr class="mb-4"> 
+    <div class="container">
+        <button type="submit" class="col-12 p-3 btn btn-primary"><strong>Finalizar compra</strong></button>
+    </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

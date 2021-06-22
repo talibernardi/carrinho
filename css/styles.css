@@ -1,0 +1,34 @@
+hr {
+    margin: 0;
+}
+
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.alert {
+    padding: 7px !important;
+    border-radius: 1.25rem;
+    font-weight: 300;
+}
+
+.alert-success {
+    background-color: #c3f2a6;
+    color: #3a7b03;
+    border: none; 
+}
+
+.button {
+    background-color: #3b74f2;
+    font-size: 81.25%;
+}
+
+img { 
+    border: 1px solid #c8c9ca;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    
+    
+}
