@@ -19,9 +19,14 @@ p {
     border: none; 
 }
 
-.button {
+button {
     background-color: #3b74f2;
     font-size: 81.25%;
+    width: 90% !important;
+}
+
+.btn-danger {
+    margin-bottom: 10px;
 }
 
 img { 
@@ -29,6 +34,13 @@ img {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 10px;
-    
-    
 }
+
+@media (max-width: 575.98px) {
+    img {
+        width: 150px !important;
+        height: 150px !important;
+        object-fit: cover;
+    }
+}
+
