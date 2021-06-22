@@ -22,6 +22,9 @@ p {
 button {
     background-color: #3b74f2;
     font-size: 81.25%;
+}
+
+.btn-rm, .btn-add {
     width: 90% !important;
 }
 
