@@ -28,19 +28,17 @@ function addTrufa() {
         myBag.push(item)
         var ids = Object.keys(myBag);
         var id = ids[ids.length - 1];
-        $('#my-bag').append('<li>'+item.name+'<span class="float-end">R$ '+item.sellingPrice+'<button data-id="'+id+'" type="button" class="btn-close rm"></button></span></li>')
+        $('#my-bag').append('<li>'+item.name+'<span class="float-end">R$ '+item.sellingPrice+'<button data-id="'+id+'"  id="rm-'+id+'" type="button" class="btn-close"></button></span></li>')
         countTotal()
-        rmTrufa()
+        rmTrufa(id)
     })
 }
 
-function rmTrufa() {
-    $('.rm').click(function () {
+function rmTrufa(id) {
+    $('#rm-'+id).click(function () {
         let id = $(this).data('id')
         $(this).parent().parent().remove()
-        myBag = myBag.filter(function(v, i) {
-            return i != id
-        })
+        delete myBag[id]
         countTotal()
     })
 }
@@ -48,7 +46,9 @@ function rmTrufa() {
 function countTotal() {
     let total = 0
     $.each(myBag, function(i, item) {
-        total += item.sellingPrice
+        if (typeof item != 'undefined') {
+            total += item.sellingPrice
+        }
     });
     
     total.toFixed(2)
