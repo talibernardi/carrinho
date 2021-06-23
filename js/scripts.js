@@ -58,7 +58,7 @@ function countTotal() {
         $('#alerta-frete').addClass('d-none')
     }
 
-    $('#valor-trufa').html('R$ '+total)
+    $('#valor-trufa').html(new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(total))
 }
 
 addTrufa()
